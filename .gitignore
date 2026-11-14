@@ -223,6 +223,3 @@ __marimo__/
 # Project Data
 data/raw/
 data/processed/
-
-# Data Loader
-src/data_loader.py
