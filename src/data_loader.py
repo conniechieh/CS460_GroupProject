@@ -1,7 +1,11 @@
-import mne 
+%pip install PyQt6
 
+
+%matplotlib qt
+import mne
+#
 # Point to the .vhdr file (keep .eeg and .vmrk in the same folder) (make sure to change name to match where your file is downloaded)
-raw = mne.io.read_raw_brainvision("C:/Users/conni/OneDrive - UAB - The University of Alabama at Birmingham/School/UAB 26-27/Fall/CS 460/CS460_GroupProject/data/raw/pt01_run01.vhdr", preload=True)
+raw = mne.io.read_raw_brainvision("C:\Users\jjarb\Downloads\sub-pt01_ses-presurgery_task-ictal_acq-ecog_run-01_ieeg (2).eeg", preload=True)
 
 
 # Print basic metadata (channels, sampling rate, duration)
